@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-soft-blue: hsl(215, 51%, 70%);
+  --primary-Cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --hr-line-bc: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  background-color: var(--main-bg);
+  color: var(--white);
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  background-color: var(--card-bg);
+  position: relative;
+  width: 315px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.box {
+  background-image: url(./images/image-equilibrium.jpg);
+  position: relative;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 265px;
+  border-radius: 10px;
+  background-color: var(--primary-Cyan);
+  opacity: 0;
+}
+
+.box::after {
+  content: url(./images/icon-view.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.box:hover::before {
+  opacity: 0.5;
+}
+
+.box:hover::after {
+  opacity: 1;
+}
+
+.details {
+  margin: 20px 0;
+}
+.details .title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.details .title:hover {
+  color: var(--primary-Cyan);
+}
+
+.details .description {
+  color: var(--primary-soft-blue);
+  font-weight: 200;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.info .item {
+  display: flex;
+  gap: 8px;
+}
+
+.item:first-child {
+  color: var(--primary-Cyan);
+}
+
+.item:last-child {
+  color: var(--primary-soft-blue);
+}
+
+hr {
+  background-color: var(--hr-line-bc);
+  height: 2px;
+  border: 0;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.user-profile img {
+  height: 30px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.user-profile h4 {
+  font-weight: 400;
+}
+
+.user-profile h4:hover {
+  color: var(--primary-Cyan);
+  cursor: pointer;
+}
+
+.user-profile .creation {
+  color: var(--primary-soft-blue);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--primary-Cyan);
+}
