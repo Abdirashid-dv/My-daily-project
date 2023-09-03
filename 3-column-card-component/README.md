@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [@Solution]([https://github.com/Abdirashid-dv/My-daily-project](https://github.com/Abdirashid-dv/My-daily-project/tree/main/3-column-card-component))
+- Solution URL: [@Solution](https://github.com/Abdirashid-dv/My-daily-project/tree/main/3-column-card-component)
 - Live Site URL: [@Live-site](https://column-card-component-eosin.vercel.app/)
 
 ## My process
