@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent: hsla(0, 0%, 100%, 0.75);
+  --very-light-grey: hsl(0, 0%, 95%);
+  --lexend-deca-fnt: "Lexend Deca", sans-serif;
+  --Big-shoulders-fnt: "Big Shoulders Display", cursive;
+}
+
+.main {
+  background-color: var(--very-light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--very-light-grey);
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  padding: 20px;
+}
+
+.card-body {
+  padding: 40px;
+}
+
+.card-body .icon {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.card-body .title {
+  font-family: var(--Big-shoulders-fnt);
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.card-body .description {
+  font-family: var(--lexend-deca-fnt);
+  font-size: 0.82rem;
+  margin-bottom: 50px;
+  color: var(--transparent);
+}
+
+.card-body button {
+  font-family: var(--lexend-deca-fnt);
+  padding: 12px 24px;
+  appearance: button;
+  outline: none;
+  border-width: 0;
+  border-radius: 30px;
+  font-size: 0.75rem;
+}
+
+.card-1 {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.card-1 button {
+  color: var(--bright-orange);
+}
+
+.card-2 {
+  background-color: var(--dark-cyan);
+}
+
+.card-2 button {
+  color: var(--dark-cyan);
+}
+
+.card-3 {
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.card-3 button {
+  color: var(--very-dark-cyan);
+}
+
+button:hover {
+  background: none;
+  padding: 10px 22px;
+  border: 2px solid var(--very-light-grey);
+  color: #fff;
+}
+.attribution {
+  font-family: var(--lexend-deca-fnt);
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.attribution a {
+  font-size: 11px;
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 745px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .card {
+    width: 250px;
+  }
+  .main {
+    height: auto;
+  }
+
+  .card-1 {
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .card-3 {
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 0;
+  }
+}
