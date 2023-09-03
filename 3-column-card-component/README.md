@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [@Solution](https://github.com/Abdirashid-dv/My-daily-project)
-- Live Site URL: [@Live-site](https://nft-card-component-lilac-rho.vercel.app/)
+- Live Site URL: [@Live-site](https://column-card-component-eosin.vercel.app/)
 
 ## My process
 
