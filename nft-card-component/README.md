@@ -65,3 +65,4 @@ const proudOfThisFunc = () => {
 
 - Frontend Mentor - [@Abdirashid-dv](https://www.frontendmentor.io/profile/Abdirashid-dv)
 - Twitter - [@codewithreshid](https://twitter.com/codewithreshid)
+- LinkedIn - [@Abdirashid-Mowlid](https://www.linkedin.com/in/abdulrashid-mowlid-a1937915a/)
