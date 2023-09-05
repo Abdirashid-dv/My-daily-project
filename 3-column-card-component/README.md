@@ -52,7 +52,7 @@ I just practiced grid layout.
 ```css
 .proud-of-this-css {
   display: grid;
-  color: papayawhip;
+  color: red;
 }
 ```
 
