@@ -52,6 +52,7 @@ i just learned how some pseudo elements work like ::before and ::after.
 .proud-of-this-css::after {
   content: "";
   color: red;
+  background-color: #000;
 }
 ```
 
