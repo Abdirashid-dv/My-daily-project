@@ -51,7 +51,8 @@ i just learned how some pseudo elements work like ::before and ::after.
 ```css
 .proud-of-this-css::after {
   content: "";
-  color: papayawhip;
+  color: red;
+  background-color: #000;
 }
 ```
 
